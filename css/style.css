@@ -1,0 +1,128 @@
+body{
+     height: 100vh;
+     /* background-image: linear-gradient(125deg,rgb(179, 93, 171), rgb(78 114 181), rgb(152 85 199), rgb(57 103 206)); */
+     background-image:linear-gradient(125deg ,rgba(195, 183, 53, 0.842),rgba(111, 138, 212, 0.787),rgba(228, 144, 35, 0.842),rgba(152, 66, 223, 0.842));
+     background-size: 400%;
+     animation: bganimation 15s infinite;
+}
+
+.logo{
+     display: block;
+     margin: auto;
+     /* margin-bottom: 10px; */
+     width: 50px;
+     height: 50px;
+}
+
+.welcome{
+     text-align: center;
+     justify-content: center;
+     font-size: 30px;
+     font-weight: bold;
+     color: #2eff00;
+     /* margin-bottom: 10px; */
+     padding: 10px;
+     animation: welcomeanimation 5s infinite;
+     animation-direction: alternate;
+}
+
+@keyframes bganimation{
+     0%{
+          background-position: 0% 50%;
+     }    
+     50%{
+          background-position: 100% 50%;
+     }    
+     100%{
+          background-position: 0% 50%;
+     }    
+}
+
+
+@keyframes welcomeanimation{
+     0%{
+          color: rgb(255, 90, 14);
+     }
+
+     25%{
+          color: rgb(229, 255, 0);
+     }
+
+     50%{
+          color: rgb(9, 255, 0);
+     }
+
+     75%{
+          color: rgb(29, 211, 228);
+     }
+
+     100% {
+          color: rgb(144, 36, 216);
+     }    
+}
+
+.container{
+     max-width: 846px;
+     border: 1px solid black;
+     margin: auto;
+     height: 55vh;
+     padding: 28px;
+     overflow-y: auto;
+     margin-bottom: 15px;
+     background: #a4c3ff;
+}
+.message{
+     background-color: gainsboro;
+     width: 24%;
+     padding: 8px;
+     margin: 14px 7px;
+     border: 2px solid black;
+     border-radius: 5px;
+     font-family: Arial, Helvetica, sans-serif;
+     box-shadow: 10px 10px 5px #96a59b;
+}
+
+.left{
+     background-color: #f5bb5ebf;
+     float: left;
+     clear: both;
+     box-shadow: -10px -5px 5px #565c58;
+}
+
+.right{
+     background-color: #88ff69bf;
+     float: right;
+     clear: both;
+     box-shadow: 10px 10px 5px #484d4a;
+}
+
+#send-container{
+     display: block;
+     margin: auto;
+     text-align: center;
+     max-width: 900px;
+}
+
+#messageInp{
+     width: 85%;
+     /* border: 2px solid black; */
+     border-radius: 3px;
+     height: 22px;
+     background: #d1e448ad;
+     outline: none;
+}
+
+.btn{
+     cursor: pointer;
+     /* border: 2px solid black; */
+     border-radius: 4px;
+     height: 34px;
+     width: 95px;
+     /* font-weight: bold; */
+     background-color: #72ff4eb8;
+     transition-duration: 0.3s;
+}
+.btn:hover{
+     box-shadow: 0 6px 10px 0 rgb(0 0 0 / 45%), 0 14px 20px 3px rgb(171 51 240 / 40%);
+     background-color: violet;
+}
